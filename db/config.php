@@ -1,5 +1,6 @@
 <?php
-// session_start();
+// start the session
+session_start();
 // our database configuration stays here
 $host = "localhost";
 $dbuser = "root";
@@ -22,6 +23,8 @@ die ('Could not connect:' . mysql_error());
 $createuser = "CREATE TABLE users (
     id int(11) NOT NULL AUTO_INCREMENT,
     username varchar(255) NOT NULL,
+    firstname varchar(255) NOT NULL,
+    lastname varchar(255) NOT NULL,
     email varchar(255) NOT NULL,
     password varchar(255) NOT NULL,
     PRIMARY KEY (id),
@@ -42,3 +45,5 @@ if(!$exists){
     $connection->query($createuser) === TRUE;
 }
 
+
+$connection->close();
