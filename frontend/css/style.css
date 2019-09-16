@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* /Background icon positioning */
+.bottom-left,
+.bottom-right,
+.top-left,
+.top-right {
+	position: fixed;
+}
+.bottom-left {
+	bottom: 0;
+	left: 0;
+	right: auto;
+}
+.bottom-right {
+	bottom: 0;
+	left: auto;
+	right: 0;
+}
+.top-left {
+	left: 0;
+	right: auto;
+	top: 0;
+}
+.top-right {
+	left: auto;
+	right: 0;
+	top: 0;
+}
+
+​ .top-right, .top-left, .bottom-right, .bottom-left {
+    
+    width: 15em;
+    height: 15em;
+}
+
+.top-right{
+    width: 15em;
+    height: 15em;
+   
+}
+
+/* form */
+form {
+    border: 1px solid black;
+    padding: 100px;
+    text-align: center;
+    position:fixed;
+    top:20%;
+    left:30%;
+    width:250px;
+    justify-content: center;
+    align-items: center;
+} 
+
+/* Media Queries */
+
+@media(max-width: 780px){
+    .top-right, .top-left, .bottom-right, .bottom-left {
+    
+        width: 10em;
+        height: 10em;
+    }
+    
+    .top-right{
+        width: 10em;
+        height: 10em;
+       
+    }
+}
+
+@media(max-width: 588px){
+    img{
+        display: none;
+    }
+}
