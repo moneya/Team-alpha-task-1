@@ -1,0 +1,94 @@
+
+html,body{
+  height:100%;
+  width:100%;
+}
+.container{
+  height:100%;
+  width:100%;
+}
+
+/* /Background icon positioning */
+.bottom-left,
+.bottom-right,
+.top-left,
+.top-right {
+	position: fixed;
+}
+.bottom-left {
+	bottom: 0;
+	left: 0;
+  width:12%;
+  height:22%;
+
+}
+.bottom-right {
+	bottom: 0;
+
+	right: 0;
+  width:25%;
+  height:32%;
+}
+.top-left {
+	left: 0;
+	top: 0;
+  width:17%;
+  height:35%;
+}
+.top-right {
+
+	right: 0;
+	top: 0;
+  width:10%;
+  height:17%;
+}
+
+/* form */
+form {
+  border: 1px solid black;
+  margin: 10px 0px;
+  padding:10px;
+
+}
+.forms-container{
+
+  margin:10px auto;
+  width:250px;
+  text-align: center;
+}
+​
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media(max-width: 780px){
+
+    .top-left{
+      width:23%;
+      height:30%;
+    }
+    .top-right{
+      width:16%;
+      height:14%;
+    }
+    .bottom-left{
+      width:16%;
+      height:15%;
+    }
+    .bottom-right{
+      width:35%;
+      height:28%;
+    }
+
+}
+
+@media(max-width: 588px){
+    img{
+        display: none;
+    }
+}
