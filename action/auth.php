@@ -7,13 +7,6 @@ $dbase = "crudsams";
 $table= "users";
 
 
-// initializing variables
-$username = "";
-$email    = "";
-$firstname = "";
-$lastname = "";
-$errors = array(); 
-
 
 //Make the connection to the database
 $connection=   mysqli_connect($host, $dbuser, $dbpassword,$dbase);
@@ -22,6 +15,15 @@ if (!$connection)
 {
 die ('Could not connect:' . mysql_error());
 }
+
+
+
+// initializing variables
+$username = "";
+$email    = "";
+$firstname = "";
+$lastname = "";
+$errors = array(); 
 
 
 // LOGIN USER
@@ -45,7 +47,7 @@ if (isset($_POST['login'])) {
   	if (mysqli_num_rows($results) == 1) {
   	  $_SESSION['username'] = $username;
   	  $_SESSION['success'] = "You are now logged in";
-  	  header('location: secure.php');
+  	  header('location: welcome');
   	}else {
         // header('location: /');
         // header("Location: http://www.yourwebsite.com/user.php"); 
@@ -105,7 +107,7 @@ if (isset($_POST['reg'])) {
         mysqli_query($connection, $query);
         $_SESSION['username'] = $username;
         $_SESSION['success'] = "You are now logged in";
-        header('location: secure.php');
+        header('location: welcome');
     }
   }
 
@@ -114,7 +116,7 @@ if (isset($_POST['reg'])) {
       if(isset($_POST['logout'])){
         session_destroy();
         unset($_SESSION['username']);
-        header('Location: index.php');
+        header('Location: /');
     }
 // uncomment to use for viewing sent $_POST requests
 // var_dump($_POST);

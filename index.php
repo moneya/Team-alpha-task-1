@@ -1,3 +1,4 @@
+
 <?php
 
 // start the session
@@ -7,73 +8,68 @@ require('action/auth.php');
 
 ?>
 
+<?php  if (isset($_SESSION['username'])) {
+     header('Location: welcome');
+}
+     
+    ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alpha Team</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- images  -->
     <div class="container">
-        <!-- Throw an error for an unauthorize access to a secure page -->
+        <img class="top-left" src="images/Subtract.png" alt="">
+        <img class="top-right" src="images/Subtract (1).png" alt="">
+        <img class="bottom-left" src="images/Subtract (3).png" alt="">
+        <img class="bottom-right" src="images/Subtract (2).png" alt="">
+    </div>
+
+
+    <div class="parent">
+
+        <form class="quote" method="post" action="">
+            <header>
+                <h2>Log In</h2>
+
+            </header>
+             <!-- Throw an error for an unauthorize access to a secure page -->
         <?php if(!empty($_SESSION['msg'] ) ){
             echo  "You must log in first";
             unset($_SESSION['msg']);
         }
            
             ?>
-    <?php include('errors.php'); ?>
-        <form method="post" action="">
-            <div id="div_login">
-                <h1>Login</h1>
-                
-                <div>
-                    <input type="text" name="username" placeholder="Username" />
-                </div>
-                <div>
-                    <input type="password" class="textbox" name="password" placeholder="Password"/>
-                </div>
-                <div>
-                    <button type="submit" class="btn" name="login">Login</button>
-                </div>
+        <?php include('errors.php'); ?>
+            <div>
+
+                <input type="text" name="username" placeholder="Username/Email">
             </div>
+
+            <div>
+
+                <input type="password" name="password" placeholder="Password">
+            </div>
+            <button class="button_2" name="login"  type="submit">Log In</button>
+            <p class="have-act">I Am New Here <a href="register" class="reg">Register</a></p>
         </form>
-
-
-
-
-        <!-- //Register -->
-
-        <div class="header">
-  	<h2>Register</h2>
-  </div>
-	
-  <form method="post" action="">
- 
-  	<div class="input-group">
-  	  <label>Username</label>
-  	  <input type="text" name="username" value="<?php echo $username; ?>">
-  	</div>
-  	<div class="input-group">
-  	  <label>Email</label>
-  	  <input type="email" name="email" value="<?php echo $email; ?>">
-      </div>
-      
-      <div class="input-group">
-  	  <label>Firstname</label>
-  	  <input type="text" name="firstname" value="<?php echo $firstname; ?>">
-  	</div>
-  	<div class="input-group">
-  	  <label>Lastname</label>
-  	  <input type="text" name="lastname" value="<?php echo $lastname; ?>">
-      </div>
-      
-  	<div class="input-group">
-  	  <label>Password</label>
-  	  <input type="password" name="password">
-  	</div>
-  	<div class="input-group">
-  	  <label>Confirm password</label>
-  	  <input type="password" name="c_password">
-  	</div>
-  	<div class="input-group">
-  	  <button type="submit" class="btn" name="reg">Register</button>
-  	</div>
- 
-  </form>
     </div>
 
 
+
+
+
+
+
+</body>
+
+</html>
