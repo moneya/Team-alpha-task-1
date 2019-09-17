@@ -11,47 +11,100 @@
 
 <body>
     <!-- images  -->
+    <img class="top-left" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/feo7opljnv8fzthljrb5.png" alt="">
+    <img class="top-right" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/lrnzpp5pqrvgcvdq436d.png" alt="">
+    <img class="bottom-left" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/upm7yc8p4q1vo2gjpo6y.png" alt="">
+    <img class="bottom-right" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/y2jrfxzyu8t25heg5lfr.png" alt="">
+
     <div class="container">
-        <img class="top-left" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/feo7opljnv8fzthljrb5.png" alt="">
-        <img class="top-right" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/lrnzpp5pqrvgcvdq436d.png" alt="">
-        <img class="bottom-left" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/upm7yc8p4q1vo2gjpo6y.png" alt="">
-        <img class="bottom-right" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/y2jrfxzyu8t25heg5lfr.png" alt="">
+
+
+          <div class="forms-container">
+
+            <!--SIGN UP FORM--> <!--Should be handled by Peace(@Newchassis)-->
+            <!-- Both forms should remain as they are under the div(forms-container). Good Luck!-->
+            <form action="#" class = "register">
+
+                <div>
+                    <h2>Sign Up</h2>
+
+                </div>
+
+                <div>
+
+                    <div class = "input-container">
+                        <input id="first-name-field" name="FirstName Field" type="text" class="field text fn" value="" tabindex="1" placeholder="First Name">
+                    </div>
+
+                    <div>
+                        <input id="last-name-field" name="LastName Field" type="text" class="field text fn" value="" tabindex="1" placeholder="Last Name">
+                    </div>
+
+                    <div>
+                        <input id="username-field" name="Username Field" type="text" class="field text fn" value="" tabindex="1" placeholder="Username">
+                    </div>
+
+                    <div>
+                        <input id="email-field" name="Email" type="email" spellcheck="false" value="" maxlength="255" tabindex="3" placeholder="E-mail">
+                    </div>
+
+
+                    <div>
+                        <input id="password-field" name="Password" type="password" class="field text fn" value="" tabindex="3" placeholder="Password">
+                    </div>
+
+
+                        <button id="saveForm" >Register</button>
+                        <p class="have-act">I Already Have An Account?<strong><a href = "#" class="blueText"> Log In</a></strong></p>
+
+                </div>
+
+
+
+            </form>
+
+            <!--LOG IN FORM--> <!--Should be handled by Michelle(@michelle122)-->
+            <form action="#" class = "log-in">
+
+                <div>
+                    <h2>Log In</h2>
+                </di
+                <div>
+                    <div>
+                        <input id="username-or-email" name="username/email Field" type="text" class="field text fn" value="" tabindex="1" placeholder="Username or E-mail">
+                    </div>
+
+                    <div>
+                        <input id="last-name-field" name="LastName Field" type="text" class="field text fn" value="" tabindex="1" placeholder="Password">
+                    </div>
+
+                    <button id="logIn" >Log in</button>
+                    <p class="have-act">I'm new here<strong><a href = "#" class="redText"> Register</a></strong></p>
+
+
+                </div>
+
+            </form>
+         </div>
+
+
     </div>
 
 
-    <div class="parent">
+    <!-- /form -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 
-        <form class="quote">
-            <header>
-                <h2>Sign Up</h2>
-
-            </header>
-            <div>
-
-                <input type="text" placeholder="First Name">
-            </div>
-            <div>
-
-                <input type="text" placeholder="Last Name">
-            </div>
-            <div>
-                <input type="email" placeholder="Email Address">
-            </div>
-            <div>
-
-                <input type="password" placeholder="Password">
-            </div>
-            <button class="button_1" type="submit">Register</button>
-            <p class="have-act">I Already Have An Account?.<a href="login.html" class="active">Log In</a></p>
-        </form>
-    </div>
-
-
-
-
-
+    <script>
+      $('.have-act a').click(function(){
+        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+      });
+    </script>
 
 
 </body>
+
+
+
 
 </html>
