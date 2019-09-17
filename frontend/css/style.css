@@ -149,10 +149,12 @@ input {
 .blueText{
   color: #0058dc;
   cursor: pointer;
+  text-decoration: none;
 }
 .redText{
   color: #F36F6F;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /*.register{
