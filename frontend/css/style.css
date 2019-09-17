@@ -11,9 +11,13 @@ body {
     overflow: hidden;
 }
 
+
 /* /Background icon positioning */
 
-.bottom-left, .bottom-right, .top-left, .top-right {
+.bottom-left,
+.bottom-right,
+.top-left,
+.top-right {
     position: fixed;
 }
 
@@ -41,7 +45,10 @@ body {
     top: 0;
 }
 
-​ .top-right, .top-left, .bottom-right, .bottom-left {
+​ .top-right,
+.top-left,
+.bottom-right,
+.bottom-left {
     width: 15em;
     height: 15em;
 }
@@ -50,6 +57,7 @@ body {
     width: 15em;
     height: 15em;
 }
+
 
 /* form */
 
@@ -66,13 +74,32 @@ input {
     margin-top: 5px;
     width: 500px;
     height: 40px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    font-size: 1em;
+    /* border-radius: 10px; */
+    /* margin-bottom: 20px; */
+    border: 0.5px solid #B7B3B3;
+    box-sizing: border-box;
+    border-radius: 40px;
+    margin-bottom: 15px;
+    /* font-size: 1em; */
 }
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.7);
+    padding-left: 15px;
+}
+
 .parent {
     margin-top: 5vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,9 +107,35 @@ input {
     width: 90vw;
     height: 90vh;
     margin-left: 50px;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 8px rgba(204, 204, 204, 0.25);
 }
 
+
+/* have an account */
+
+.have-act {
+    font-family: Roboto;
+    font-style: normal;
+    /* font-weight: 500; */
+    /* font-size: 18px; */
+    /* line-height: 26px; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* text-align: center; */
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.have-act a.active {
+    color: #0058DC;
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+
 /* /buttons */
+
 button {
     width: 506px;
     margin-top: 10px;
@@ -94,12 +147,13 @@ button {
 }
 
 .button_1 {
-    background: #B2FEFA;
+    /* background: #B2FEFA; */
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, rgb(81, 167, 224), rgb(139, 167, 226));
+    /* background: -webkit-linear-gradient(to left, rgb(81, 167, 224), rgb(139, 167, 226)); */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, rgb(50, 99, 163), rgb(177, 186, 214));
+    /* background: linear-gradient(to left, rgb(50, 99, 163), rgb(177, 186, 214)); */
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(270deg, #009DF6 26.4%, #00C0DB 68.5%);
 }
 
 .button_2 {
@@ -111,11 +165,11 @@ button {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.active{
+.active {
     text-decoration: none;
 }
 
-.reg{
+.reg {
     color: red;
     text-decoration: none;
 }
@@ -124,7 +178,10 @@ button {
 /* Media Queries */
 
 @media(max-width: 1100px) {
-    .top-right, .top-left, .bottom-right, .bottom-left {
+    .top-right,
+    .top-left,
+    .bottom-right,
+    .bottom-left {
         width: 10em;
         height: 10em;
     }
@@ -145,7 +202,8 @@ button {
         text-align: center;
         width: 250px;
     }
-    button, input {
+    button,
+    input {
         width: 250px;
     }
     .parent {
