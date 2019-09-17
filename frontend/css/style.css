@@ -105,11 +105,13 @@ input[type='password'] {
     justify-content: center;
     align-items: center;
     width: 90vw;
+    /* width: 80%; */
     height: 90vh;
     margin-left: 50px;
-    border: 1px solid #BDBDBD;
+    /* border: 1px solid #BDBDBD; */
     box-sizing: border-box;
-    box-shadow: 4px 4px 8px rgba(204, 204, 204, 0.25);
+    /* box-shadow: 4px 4px 6px rgba(204, 204, 204, 0.40); */
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -131,6 +133,13 @@ input[type='password'] {
     color: #0058DC;
     font-weight: 700;
     padding-left: 5px;
+}
+
+.have-act a.reg {
+    color: red;
+    font-weight: 700;
+    padding-left: 5px;
+    text-decoration: none;
 }
 
 
@@ -157,22 +166,24 @@ button {
 }
 
 .button_2 {
-    background: #12c2e9;
+    /* background: #12c2e9; */
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
+    /* background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9); */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
+    /* background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9); */
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(270deg, #BE10EA 26.4%, #80A9E6 68.5%);
 }
 
 .active {
     text-decoration: none;
 }
 
-.reg {
+
+/* .reg {
     color: red;
     text-decoration: none;
-}
+} */
 
 
 /* Media Queries */
