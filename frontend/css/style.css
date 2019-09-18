@@ -221,4 +221,14 @@ input {
   img{
     display:none;
   }
+  form{
+    width: 65%;
+  }
+  h2{
+    margin-bottom: 1em;
+  }
+  input{
+    width:100%;
+    height:6vh;
+  }
 }
