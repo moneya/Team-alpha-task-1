@@ -83,7 +83,7 @@ body {
 form {
   /*border: 1px solid black;*/
   margin: auto;
-  width:40%;
+  width:50%;
   padding:10px;
   text-align: center;
 
@@ -93,7 +93,7 @@ form {
 
 input {
     padding-left: 2em;
-    height: 5vh;
+    height: 5.5vh;
     font-size: 87%;
     margin-bottom: 1.5em;
     width: 85%;
@@ -166,7 +166,7 @@ input {
 
 @media(max-width: 780px){
 
-    #img1{
+    .top-left{
       width:23%;
       height:30%;
     }
@@ -186,7 +186,39 @@ input {
 }
 
 @media(max-width: 588px){
-    img{
+    /*img{
         display: none;
+    }*/
+    .top-left{
+      width:25%;
+      height:21%;
     }
+    .top-right{
+      width:16%;
+      height:14%;
+    }
+    .bottom-left{
+      width:16%;
+      height:15%;
+    }
+    .bottom-right{
+      width:30%;
+      height:20%;
+    }
+    form{
+      width: 65%;
+    }
+    h2{
+      margin-bottom: 1em;
+    }
+    input{
+      width:100%;
+      height:6vh;
+    }
+}
+
+@media(max-width: 340px){
+  img{
+    display:none;
+  }
 }
