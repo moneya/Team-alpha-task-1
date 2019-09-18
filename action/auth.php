@@ -1,5 +1,5 @@
 <?php
-$status = 'local';
+$status = 'prod';
 
 if($status === 'local'){
 // local
