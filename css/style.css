@@ -175,6 +175,10 @@ button {
     background: linear-gradient(270deg, #BE10EA 26.4%, #80A9E6 68.5%);
 }
 
+.alpha {
+    background: linear-gradient(270deg, #BE10EA 26.4%, #80A9E6 68.5%) !important;
+}
+
 .active {
     text-decoration: none;
 }

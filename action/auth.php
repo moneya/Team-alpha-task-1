@@ -1,12 +1,24 @@
 <?php
+$status = 'local';
 
+if($status === 'local'){
+// local
 $host = "localhost";
 $dbuser = "root";
 $dbpassword = "";
 $dbase = "crudsams";
 $table= "users";
+}
 
+if($status === 'prod'){
+  //production
+$host = "sql108.epizy.com";
+$dbuser = "epiz_24497065";
+$dbpassword = "FCJxPJ8EfGcSa";
+$dbase = "epiz_24497065_task1";
+$table= "users";
 
+}
 
 //Make the connection to the database
 $connection=   mysqli_connect($host, $dbuser, $dbpassword,$dbase);
@@ -17,6 +29,45 @@ die ('Could not connect:' . mysql_error());
 }
 
 
+
+
+
+
+$createuser = "CREATE TABLE users (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  username varchar(255) NOT NULL,
+  firstname varchar(255) NOT NULL,
+  lastname varchar(255) NOT NULL,
+  email varchar(255) NOT NULL,
+  password varchar(255) NOT NULL,
+  PRIMARY KEY (id),
+  UNIQUE KEY username (username),
+  UNIQUE KEY email (email)
+ );";
+
+ 
+ 
+
+//Code to see if Table Exists
+$table_exists = $connection->query("select 1 from $table");
+
+if ($connection){
+ if(!$table_exists)
+ {
+   // Create the users table
+   $connection->query($createuser) === TRUE;
+
+   $insertusername = 'demouser';
+   $insertemail = 'demouser@domain.com';
+   $insertpassword = md5('123456789');
+   $insertfirstname = 'demo';
+   $insertlastname = 'user';
+
+   $query = "INSERT INTO users (username, email, password,firstname,lastname) 
+   VALUES('$insertusername', '$insertemail', '$insertpassword', '$insertfirstname', '$insertlastname')";
+    mysqli_query($connection, $query);
+ }
+}
 
 // initializing variables
 $username = "";
