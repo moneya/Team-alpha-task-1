@@ -6,16 +6,16 @@ if($status === 'local'){
 $host = "localhost";
 $dbuser = "root";
 $dbpassword = "";
-$dbase = "crudsams";
+$dbase = "test";
 $table= "users";
 }
 
 if($status === 'prod'){
   //production
-$host = "sql108.epizy.com";
-$dbuser = "epiz_24497065";
-$dbpassword = "FCJxPJ8EfGcSa";
-$dbase = "epiz_24497065_task1";
+$host = "";
+$dbuser = "";
+$dbpassword = "";
+$dbase = "";
 $table= "users";
 
 }
