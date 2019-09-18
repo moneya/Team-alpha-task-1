@@ -68,20 +68,18 @@
 
                 <div>
                     <h2>Log In</h2>
-                </di
+                </div>
                 <div>
-                    <div>
-                        <input id="username-or-email" name="username/email Field" type="text" class="field text fn" value="" tabindex="1" placeholder="Username or E-mail">
-                    </div>
 
-                    <div>
+                        <input id="username-or-email" name="username/email Field" type="text" placeholder="Username or E-mail">
+
+
+
                         <input id="last-name-field" name="LastName Field" type="text" class="field text fn" value="" tabindex="1" placeholder="Password">
-                    </div>
+                    
 
                     <button id="logIn" >Log in</button>
                     <p class="have-act">I'm new here!<strong><a href = "#" class="redText"> Register</a></strong></p>
-
-
                 </div>
 
             </form>
@@ -97,7 +95,7 @@
 
     <script>
       $('.have-act a').click(function(){
-        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+        $('form').animate({height: "toggle",width: "toggle", opacity: "toggle"}, "slow");
       });
     </script>
 

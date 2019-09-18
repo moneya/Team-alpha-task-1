@@ -1,14 +1,27 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  height:100%;
+  width:100%;
 }
 
 body {
+
     background: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, Helvetica, sans-serif;
     line-height: 2.5;
     font-size: 1rem;
-    overflow: hidden;
+    /*overflow: hidden;*/
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  height:100%;
+  width:100%;
+  padding: auto;
 }
 
 
@@ -18,206 +31,126 @@ body {
 .bottom-right,
 .top-left,
 .top-right {
-    position: fixed;
+	position: fixed;
 }
-
 .bottom-left {
-    bottom: 0;
-    left: 0;
-    right: auto;
-}
+	bottom: 0;
+	left: 0;
+  width:12%;
+  height:22%;
 
+}
 .bottom-right {
-    bottom: 0;
-    left: auto;
-    right: 0;
-}
+	bottom: 0;
 
+	right: 0;
+  width:25%;
+  height:32%;
+}
 .top-left {
-    left: 0;
-    right: auto;
-    top: 0;
+	left: 0;
+	top: 0;
+  width:17%;
+  height:35%;
 }
-
 .top-right {
-    left: auto;
-    right: 0;
-    top: 0;
-}
 
-​ .top-right,
-.top-left,
-.bottom-right,
-.bottom-left {
-    width: 15em;
-    height: 15em;
-}
-
-.top-right {
-    width: 15em;
-    height: 15em;
+	right: 0;
+	top: 0;
+  width:10%;
+  height:17%;
 }
 
 
 /* form */
 
-form {
-    text-align: center;
-    width: 500px;
+.forms-container{
+     align-self: center;
+     display: flex;
+     flex-direction: column;
+     width: 90vw;
+     height: 90vh;
+     box-sizing: border-box;
+     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
-
-form header {
-    padding-bottom: 5px;
+form {
+  margin: auto;
+  width:40%;
+  padding:10px;
+  text-align: center;
 }
 
 input {
-    margin-top: 5px;
-    width: 500px;
-    height: 40px;
-    /* border-radius: 10px; */
-    /* margin-bottom: 20px; */
-    border: 0.5px solid #B7B3B3;
+    padding-left: 2em;
+    height: 5vh;
+    font-size: 87%;
+    margin-bottom: 1.5em;
+    width: 85%;
+    border: 1px solid #B7B3B3;
     box-sizing: border-box;
     border-radius: 40px;
-    margin-bottom: 15px;
-    /* font-size: 1em; */
 }
 
-input[type='text'],
-input[type='email'],
-input[type='password'] {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-    color: rgba(0, 0, 0, 0.7);
-    padding-left: 15px;
+.button_2{
+  box-shadow:  0px 3px 5px rgba(0, 0, 0, 0.4);
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#80a9e6+33,be10ea+62 */
+  background: #80a9e6; /* Old browsers */
+  background: -moz-linear-gradient(left,  #80a9e6 33%, #be10ea 62%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #80a9e6 33%,#be10ea 62%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #80a9e6 33%,#be10ea 62%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80a9e6', endColorstr='#be10ea',GradientType=1 ); /* IE6-9 */
+  color: #fff;
+  margin-top: 1em;
+  width:90%;
+  height: 5vh;
+  border-radius: 40px;
+  cursor: pointer;
+
+}
+.have-act{
+  margin-top: 1em;
+  font-size: 78%;
+  color: #848484;
 }
 
-.parent {
-    margin-top: 5vh;
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90vw;
-    /* width: 80%; */
-    height: 90vh;
-    margin-left: 50px;
-    /* border: 1px solid #BDBDBD; */
-    box-sizing: border-box;
-    /* box-shadow: 4px 4px 6px rgba(204, 204, 204, 0.40); */
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+.reg{
+  color: #F36F6F;
+  text-decoration: none;
 }
 
 
-/* have an account */
-
-.have-act {
-    font-family: Roboto;
-    font-style: normal;
-    /* font-weight: 500; */
-    /* font-size: 18px; */
-    /* line-height: 26px; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* text-align: center; */
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.have-act a.active {
-    color: #0058DC;
-    font-weight: 700;
-    padding-left: 5px;
-}
-
-.have-act a.reg {
-    color: red;
-    font-weight: 700;
-    padding-left: 5px;
-    text-decoration: none;
-}
 
 
-/* /buttons */
-
-button {
-    width: 506px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    height: 50px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 1em;
-}
-
-.button_1 {
-    /* background: #B2FEFA; */
-    /* fallback for old browsers */
-    /* background: -webkit-linear-gradient(to left, rgb(81, 167, 224), rgb(139, 167, 226)); */
-    /* Chrome 10-25, Safari 5.1-6 */
-    /* background: linear-gradient(to left, rgb(50, 99, 163), rgb(177, 186, 214)); */
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(270deg, #009DF6 26.4%, #00C0DB 68.5%);
-}
-
-.button_2 {
-    /* background: #12c2e9; */
-    /* fallback for old browsers */
-    /* background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9); */
-    /* Chrome 10-25, Safari 5.1-6 */
-    /* background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9); */
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(270deg, #BE10EA 26.4%, #80A9E6 68.5%);
-}
-
-.active {
-    text-decoration: none;
-}
 
 
-/* .reg {
-    color: red;
-    text-decoration: none;
-} */
+
 
 
 /* Media Queries */
 
-@media(max-width: 1100px) {
-    .top-right,
-    .top-left,
-    .bottom-right,
-    .bottom-left {
-        width: 10em;
-        height: 10em;
+@media(max-width: 780px){
+
+    #img1{
+      width:23%;
+      height:30%;
     }
-    .top-right {
-        width: 10em;
-        height: 10em;
+    #img2{
+      width:16%;
+      height:14%;
     }
+    #img3{
+      width:16%;
+      height:15%;
+    }
+    #img4{
+      width:35%;
+      height:28%;
+    }
+
 }
 
-@media(max-width: 588px) {
-    img {
+@media(max-width: 588px){
+    img{
         display: none;
-    }
-}
-
-@media(max-width: 588px) {
-    form {
-        text-align: center;
-        width: 250px;
-    }
-    button,
-    input {
-        width: 250px;
-    }
-    .parent {
-        width: 80vw;
     }
 }
