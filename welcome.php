@@ -31,8 +31,8 @@ require('action/auth.php')
   <img class="bottom-right" id = "img4" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/y2jrfxzyu8t25heg5lfr.png" alt="">
 
   <div class="container">
-    <div class="forms-container">
-      <h1>Welcome Alpha!</h1>
+    <div class="forms-container" style = "text-align: center; padding=2em auto;">
+      <h1 style = "font-family: 'Helvetica Neue', 'sans-serif' " >Welcome Alpha!</h1>
       <?php if (isset($_SESSION['success'])) : ?>
         <div class="error success" >
         	<h3>
@@ -42,18 +42,24 @@ require('action/auth.php')
             ?>
         	</h3>
         </div>
-        <?php endif ?>
+      <?php endif ?>
       <p class="secret-text">“Beginning is scary, exciting, terrifying, and all things amazing. Begin even when you're not sure.....What do you have to lose?”
   ― Chris Burkmenn</p>
+
+      <div style = "text-align: center; padding= 2em auto;">
+           <!-- logged in user information -->
+         <?php  if (isset($_SESSION['username'])) : ?>
+        <p>Welcome <strong><?php echo $_SESSION['username']; ?> </strong></p>
+        <form class="" action="" method="post">
+          <input type="submit" value="Logout" name="logout" id = "logout" style = "width: 35%; background-color: #ff0000; margin: auto 0; color: #fff; cursor: pointer">
+        </form>
+
+        <?php endif ?>
+      </div>
     </div>
   </div>
 
-  <div>
-       <!-- logged in user information -->
-     <?php  if (isset($_SESSION['username'])) : ?>
-    <p>Welcome <strong><?php echo $_SESSION['username']; ?> </strong></p>
-    <input type="submit" value="Logout" name="logout">
-    <?php endif ?>
-  </div>
+
+
 
 </body>

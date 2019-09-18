@@ -139,7 +139,12 @@ input {
   color: #0058dc;
   text-decoration: none;
 }
-
+#logout{
+  border:0;
+  box-shadow:  0px 3px 5px rgba(0, 0, 0, 0.4);
+  padding:0;
+  border-radius: 5px;
+}
 
 
 
