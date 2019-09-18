@@ -11,7 +11,7 @@ require('action/auth.php');
 <?php  if (isset($_SESSION['username'])) {
      header('Location: welcome');
 }
-     
+
     ?>
 
 <!DOCTYPE html>
@@ -27,47 +27,39 @@ require('action/auth.php');
 
 <body>
     <!-- images  -->
-    <div class="container">
-        <img class="top-left" src="images/Subtract.png" alt="">
-        <img class="top-right" src="images/Subtract (1).png" alt="">
-        <img class="bottom-left" src="images/Subtract (3).png" alt="">
-        <img class="bottom-right" src="images/Subtract (2).png" alt="">
-    </div>
 
+      <img class="top-left" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/feo7opljnv8fzthljrb5.png" alt="">
+      <img class="top-right" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/lrnzpp5pqrvgcvdq436d.png" alt="">
+      <img class="bottom-left" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/upm7yc8p4q1vo2gjpo6y.png" alt="">
+      <img class="bottom-right" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/y2jrfxzyu8t25heg5lfr.png" alt="">
 
-    <div class="parent">
+      <div class="container">
+        <div class="forms-container">
 
-        <form class="quote" method="post" action="">
-            <header>
-                <h2>Log In</h2>
+            <form class="log-in" method="post" action="">
+              <div>
+                  <h2>Log In</h2>
+              </div>
+                 <!-- Throw an error for an unauthorize access to a secure page -->
+            <?php if(!empty($_SESSION['msg'] ) ){
+                echo  "You must log in first";
+                unset($_SESSION['msg']);
+            }
 
-            </header>
-             <!-- Throw an error for an unauthorize access to a secure page -->
-        <?php if(!empty($_SESSION['msg'] ) ){
-            echo  "You must log in first";
-            unset($_SESSION['msg']);
-        }
-           
-            ?>
-        <?php include('errors.php'); ?>
+                ?>
+            <?php include('errors.php'); ?>
             <div>
 
-                <input type="text" name="username" placeholder="Username/Email">
+                <input id="username-or-email" name="username" type="text" placeholder="Username/E-mail">
+                <input id="last-name-field" name="password" type="password" placeholder="Password">
+                <button id="logIn" class = "button_2" name = "login" type = "submit" >Log in</button>
+                <p class="have-act">I'm new here!<strong><a href = "register" class="reg"> Register</a></strong></p>
             </div>
-
-            <div>
-
-                <input type="password" name="password" placeholder="Password">
-            </div>
-            <button class="button_2" name="login"  type="submit">Log In</button>
-            <p class="have-act">I Am New Here <a href="register" class="reg">Register</a></p>
-        </form>
-    </div>
+          </form>
+        </div>
 
 
-
-
-
+      </div>
 
 
 </body>

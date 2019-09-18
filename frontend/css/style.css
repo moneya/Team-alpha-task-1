@@ -90,21 +90,17 @@ form {
 
 }
 
-.input-container{
 
-  height: 100%;
-  margin:0;
-  padding:0;
-}
 input {
     padding-left: 2em;
     height: 5vh;
     font-size: 87%;
     margin-bottom: 1.5em;
     width: 85%;
-    border: 2px solid #B7B3B3;
+    border: 1px solid #B7B3B3;
     box-sizing: border-box;
     border-radius: 40px;
+
 
 
 }
