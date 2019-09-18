@@ -91,6 +91,23 @@ input {
     border-radius: 40px;
 }
 
+.button_1{
+
+    box-shadow:  0px 3px 5px rgba(0, 0, 0, 0.4);
+    /* background: #B2FEFA; */
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to left, rgb(81, 167, 224), rgb(139, 167, 226)); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to left, rgb(50, 99, 163), rgb(177, 186, 214)); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(270deg, #009DF6 26.4%, #00C0DB 68.5%);
+    color: #fff;
+    margin-top: 1em;
+    width:90%;
+    height: 5vh;
+    border-radius: 40px;
+    cursor: pointer;
+}
 .button_2{
   box-shadow:  0px 3px 5px rgba(0, 0, 0, 0.4);
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#80a9e6+33,be10ea+62 */
@@ -117,7 +134,10 @@ input {
   color: #F36F6F;
   text-decoration: none;
 }
-
+.active{
+  color: #0058dc;
+  text-decoration: none;
+}
 
 
 
