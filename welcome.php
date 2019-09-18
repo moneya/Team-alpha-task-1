@@ -1,5 +1,5 @@
-<?php
-  session_start();
+<?php 
+  session_start(); 
 
   if (!isset($_SESSION['username'])) {
   	$_SESSION['msg'] = "You must log in first";
@@ -22,7 +22,7 @@ require('action/auth.php')
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -34,13 +34,13 @@ require('action/auth.php')
 
 <div class="jumbotron text-center">
   <div class="container">
-    <i class="fab fa-autoprefixer fa-6x"></i>
+    <i class="fab fa-autoprefixer fa-6x alpha"></i>
     <h1 class="display-3">Welcome Alpha!</h1>
     <?php if (isset($_SESSION['success'])) : ?>
       <div class="error success" >
       	<h3>
-          <?php
-          	echo $_SESSION['success'];
+          <?php 
+          	echo $_SESSION['success']; 
           	unset($_SESSION['success']);
           ?>
       	</h3>
@@ -50,19 +50,24 @@ require('action/auth.php')
 ― Chris Burkmenn</p>
     <hr>
     <br>
-           <!-- logged in user information -->
+        <div class="container text-center">
+             <!-- logged in user information -->
            <?php  if (isset($_SESSION['username'])) : ?>
         <p>Welcome <strong><?php echo $_SESSION['username']; ?> </strong></p>
-        <p>
-        <form method='post' action="">
-            <input type="submit" class="btn btn-light btn-lg" value="Logout" name="logout">
+        <div class="row justify-content-center">
+        <div >
+        <form method='post' action="" class="col-sm-1">
+            <input type="submit" class="btn btn-md btn-primary" value="Logout" name="logout">
         </form>
-             <!-- <a href="index.php?logout='1'" style="color: red;">logout</a>  -->
+          
 
-        </p>
+        </div>
+        </div>
+        
     <?php endif ?>
+        </div>
 
-
+   
   </div>
 </div>
 
@@ -72,3 +77,10 @@ require('action/auth.php')
 
 
 </body>
+
+
+
+
+
+
+    	
