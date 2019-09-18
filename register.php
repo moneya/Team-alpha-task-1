@@ -37,7 +37,7 @@ require('action/auth.php');
 
           <form class="log-in" method="post" action="">
             <div>
-                <h2>Register</h2>
+                <h2>Sign Up</h2>
             </div>
             <div class="error">
             <?php if(!empty($_SESSION['msg'] ) ){

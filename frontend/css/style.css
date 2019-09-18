@@ -22,6 +22,7 @@ body {
   height:100%;
   width:100%;
   padding: auto;
+  overflow: scroll;
 }
 
 /* /Background icon positioning */
@@ -29,7 +30,7 @@ body {
 .bottom-right,
 .top-left,
 .top-right {
-	position: fixed;
+	position: absolute;
 }
 .bottom-left {
 	bottom: 0;
@@ -40,7 +41,6 @@ body {
 }
 .bottom-right {
 	bottom: 0;
-
 	right: 0;
   width:25%;
   height:32%;
@@ -116,7 +116,7 @@ input {
     background: linear-gradient(270deg, #009DF6 26.4%, #00C0DB 68.5%);
     color: #fff;
     margin-top: 1em;
-    width:90%;
+    width:60%;
     height: 5vh;
     border-radius: 5px;
     cursor: pointer;
@@ -132,7 +132,7 @@ input {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80a9e6', endColorstr='#be10ea',GradientType=1 ); /* IE6-9 */
   color: #fff;
   margin-top: 1em;
-  width:90%;
+  width:60%;
   height: 5vh;
   border-radius: 5px;
   cursor: pointer;
@@ -154,9 +154,6 @@ input {
   text-decoration: none;
 }
 
-/*.register{
-  display: none;
-}*/
 
 .log-in{
   display: none;
@@ -218,7 +215,7 @@ input {
     }
 }
 
-@media(max-width: 340px){
+@media(max-width: 500px){
   img{
     display:none;
   }
