@@ -1,5 +1,5 @@
-<?php 
-  session_start(); 
+<?php
+  session_start();
 
   if (!isset($_SESSION['username'])) {
   	$_SESSION['msg'] = "You must log in first";
@@ -39,8 +39,8 @@ require('action/auth.php')
     <?php if (isset($_SESSION['success'])) : ?>
       <div class="error success" >
       	<h3>
-          <?php 
-          	echo $_SESSION['success']; 
+          <?php
+          	echo $_SESSION['success'];
           	unset($_SESSION['success']);
           ?>
       	</h3>
@@ -67,7 +67,7 @@ require('action/auth.php')
     <?php endif ?>
         </div>
 
-   
+
   </div>
 </div>
 
@@ -77,10 +77,3 @@ require('action/auth.php')
 
 
 </body>
-
-
-
-
-
-
-    	
