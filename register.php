@@ -37,7 +37,7 @@ require('action/auth.php');
 
           <form class="log-in" method="post" action="">
             <div>
-                <h2>Log In</h2>
+                <h2>Register</h2>
             </div>
             <div class="error">
             <?php if(!empty($_SESSION['msg'] ) ){
@@ -75,7 +75,7 @@ require('action/auth.php');
                 <input type="password" name="c_password" placeholder="Confirm Password">
             </div>
             <button class="button_1" name="reg" type="submit">Become an Alpha</button>
-            <p class="have-act">I Already Have An Account?.<a href="/" class="active">Log In</a></p>
+            <p class="have-act">I Already Have An Account?.<strong><a href="/" class="active">Log In</a></strong></p>
         </form>
       </div>
     </div>

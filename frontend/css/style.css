@@ -105,7 +105,7 @@ input {
 
 }
 #saveForm {
-
+    border: 0;
     box-shadow:  0px 3px 5px rgba(0, 0, 0, 0.4);
     /* background: #B2FEFA; */
     /* fallback for old browsers */
@@ -118,10 +118,11 @@ input {
     margin-top: 1em;
     width:90%;
     height: 5vh;
-    border-radius: 40px;
+    border-radius: 5px;
     cursor: pointer;
 }
 #logIn{
+  border: 0;
   box-shadow:  0px 3px 5px rgba(0, 0, 0, 0.4);
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#80a9e6+33,be10ea+62 */
   background: #80a9e6; /* Old browsers */
@@ -133,7 +134,7 @@ input {
   margin-top: 1em;
   width:90%;
   height: 5vh;
-  border-radius: 40px;
+  border-radius: 5px;
   cursor: pointer;
 
 }
@@ -203,10 +204,10 @@ input {
     }
     .bottom-right{
       width:30%;
-      height:20%;
+      height:15%;
     }
     form{
-      width: 65%;
+      width: 75%;
     }
     h2{
       margin-bottom: 1em;
@@ -222,7 +223,7 @@ input {
     display:none;
   }
   form{
-    width: 65%;
+    width: 75%;
   }
   h2{
     margin-bottom: 1em;
