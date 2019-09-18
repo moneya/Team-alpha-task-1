@@ -28,10 +28,10 @@ require('action/auth.php');
 <body>
     <!-- images  -->
 
-      <img class="top-left" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/feo7opljnv8fzthljrb5.png" alt="">
-      <img class="top-right" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/lrnzpp5pqrvgcvdq436d.png" alt="">
-      <img class="bottom-left" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/upm7yc8p4q1vo2gjpo6y.png" alt="">
-      <img class="bottom-right" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/y2jrfxzyu8t25heg5lfr.png" alt="">
+    <img class="top-left" id = "img1" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/feo7opljnv8fzthljrb5.png" alt="">
+    <img class="top-right" id = "img2"src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/lrnzpp5pqrvgcvdq436d.png" alt="">
+    <img class="bottom-left" id = "img3"src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/upm7yc8p4q1vo2gjpo6y.png" alt="">
+    <img class="bottom-right" id = "img4" src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1568717437/teamalpha/y2jrfxzyu8t25heg5lfr.png" alt="">
 
       <div class="container">
         <div class="forms-container">
@@ -50,9 +50,9 @@ require('action/auth.php');
             <?php include('errors.php'); ?>
             <div>
 
-                <input id="username-or-email" name="username" type="text" placeholder="Username/E-mail">
-                <input id="last-name-field" name="password" type="password" placeholder="Password">
-                <button id="logIn" class = "button_2" name = "login" type = "submit" >Log in</button>
+                <input  name="username" type="text" placeholder="Username/E-mail">
+                <input  name="password" type="password" placeholder="Password">
+                <button class = "button_2" name = "login" type = "submit" >Log in</button>
                 <p class="have-act">I'm new here!<strong><a href = "register" class="reg"> Register</a></strong></p>
             </div>
           </form>
