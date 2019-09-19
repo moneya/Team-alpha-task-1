@@ -75,7 +75,7 @@ require('action/auth.php');
                 <input type="password" name="c_password" placeholder="Confirm Password">
             </div>
             <button class="button_1" name="reg" type="submit">Become an Alpha</button>
-            <p class="have-act">I Already Have An Account?.<strong><a href="/" class="active">Log In</a></strong></p>
+            <p class="have-act">Already Have An Account? <strong><a href="/" class="active">Log In</a></strong></p>
         </form>
       </div>
     </div>
