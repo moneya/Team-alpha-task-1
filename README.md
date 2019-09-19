@@ -1,5 +1,4 @@
 # Team-alpha-task-1
-  For the front end devs handling the two forms,
-  Both forms should remain as they are under the div(forms-container). Good Luck!
+  This is the Github Repo for Team Alpha's task 1.
 
-#All frontend assets should be add to the frontend directory
+
