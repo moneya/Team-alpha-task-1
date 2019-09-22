@@ -50,7 +50,7 @@ require('action/auth.php');
             <?php include('errors.php'); ?>
             <div>
 
-                <input  name="username" type="text" placeholder="Username/E-mail">
+                <input  name="username" type="text" placeholder="Username">
                 <input  name="password" type="password" placeholder="Password">
                 <button class = "button_2" name = "login" type = "submit" >Log in</button>
                 <p class="have-act">I'm new here!<strong><a href = "register" class="reg"> Register</a></strong></p>
